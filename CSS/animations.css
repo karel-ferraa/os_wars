@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'HACK'; /* Nom de la première police personnalisée */
+    src: url('../hack.regular.ttf') format('truetype'); /* Chemin d'accès vers le fichier .ttf de la première police */
+}
+
+body{
+    background-color: black;
+    margin: 0;
+    overflow: hidden; /*to block the page and prevent the page from scrolling*/
+}
+
+a {
+    text-decoration: none;
+    color : whitesmoke;
+    font-family: 'HACK';
+    font-size: xx-small;
+}
+
+.quote {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25%;
+}
+
+
+#item {
+    width: 80%;
+    text-align: center;
+    position: absolute;
+
+}
+
+
+h1 {
+    color : whitesmoke;
+    font-family: 'HACK';
+    font-size: xxx-large;
+    font-weight: bolder;
+
+    background-color: black;
+    border: thick double whitesmoke;
+    padding: 20px;
+
+}
+
+#container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.coin {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-image: url('../img/coin.png');
+    background-size: cover;
+    animation: fall linear forwards; /*constant speed ans stay at the bottom*/
+}
+
+@keyframes fall {
+    0% {
+        top: -50px; /* start above the screen */
+    }
+    100% {
+        top: calc(100% - 80px); /* bottom of the screen */
+    }
+}
