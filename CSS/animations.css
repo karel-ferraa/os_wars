@@ -53,8 +53,8 @@ h1 {
 
 .coin {
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     background-image: url('../img/coin.png');
     background-size: cover;
     animation: fall linear forwards; /*constant speed ans stay at the bottom*/

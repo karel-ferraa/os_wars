@@ -1,36 +1,55 @@
 document.addEventListener('DOMContentLoaded', function() {
     const container = document.getElementById('container');
 
-    function createCoin(){
-        const coin = document.createElement('div') /*a div element represent a coin*/
+    function createCoin() {
+        const coin = document.createElement('div'); // a div element represents a coin
         coin.className = 'coin';
 
-        /*Set a random position on horinzontally*/
+        // Set a random position horizontally
         coin.style.left = `${Math.random() * window.innerWidth}px`;
 
-        /*speed of the fall */
+        // Speed of the fall
         coin.style.animationDuration = `${1.5 + Math.random() * 5}s`;
 
-
-        /*Add the new coin to the end of the child list of container in the DOM*/
+        // Add the new coin to the end of the child list of container in the DOM
         container.appendChild(coin);
 
-        /*Take of the coin of the container once the animationned is over*/
+        // Remove the coin from the container once the animation is over
         coin.addEventListener('animationend', function() {
             container.removeChild(coin);
         });
     }
 
+    // Creates coins every 50ms
+    const interval = setInterval(createCoin, 50);
+
+    // Stop creating coins and clear the container after 5 seconds
+    setTimeout(function() {
+        clearInterval(interval);
+
+        // Remove all coins from the container
+        while (container.firstChild) {
+            container.removeChild(container.firstChild);
+        }
+        // Change background color to white
+        document.body.style.backgroundColor = 'white';
+
+        //remove all element from body
+        while (document.body.firstChild){
+            document.body.removeChild(document.body.firstChild);
+        }
+
+        //add new element to the page
+        const newContent = document.createElement('section');
+        newContent.innerHTML = `
+        <img src='../img/apple.png' alt="Logo d'apple" >
         
-            
-        // Creates coins every 50ms
-        setInterval(createCoin, 50);
         
-        // Redirect toward the  apple.html after a given time
-        setTimeout(function() {
-            window.location.href = "../html/apple.html";
-        }, 5000);
+        `;
+        document.body.appendChild(newContent);
+
+    }, 5000);
 
     
-
 });
+
