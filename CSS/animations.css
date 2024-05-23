@@ -68,3 +68,8 @@ h1 {
         top: calc(100% - 80px); /* bottom of the screen */
     }
 }
+
+/*hide the elements of the page until the animation is done*/
+#pageContent{
+    display: none;
+}

@@ -34,21 +34,27 @@ document.addEventListener('DOMContentLoaded', function() {
         // Change background color to white
         document.body.style.backgroundColor = 'white';
 
+        //allow the page to scroll again
+        document.body.style.overflow = 'scroll';
+        
+
         //remove all element from body
+        /*
         while (document.body.firstChild){
             document.body.removeChild(document.body.firstChild);
+        }*/
+        const animationSection = document.getElementById("animation");
+        if (animationSection) {
+            document.body.removeChild(animationSection);
         }
 
-        //add new element to the page
-        const newContent = document.createElement('section');
-        newContent.innerHTML = `
-        <img src='../img/apple.png' alt="Logo d'apple" >
-        
-        
-        `;
-        document.body.appendChild(newContent);
+        // Display elements of the page that were hidden
+        var elements = document.querySelectorAll("#pageContent");
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.display = 'block';
+        }
 
-    }, 5000);
+    }, 500);
 
     
 });
