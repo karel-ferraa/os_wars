@@ -1,3 +1,6 @@
+const animationDuration = 500;
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const container = document.getElementById('container');
 
@@ -54,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
             elements[i].style.display = 'block';
         }
 
-    }, 500);
+    }, animationDuration);
 
     
 });
