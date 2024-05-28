@@ -3,9 +3,14 @@
     src: url('../SanFranciscoFont_apple.otf') format('truetype'); /* Chemin d'accès vers le fichier .ttf de la première police */
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #bodyApple{
     background-color: black;
-    margin: 0;
     overflow: hidden; /*to block the page and prevent the page from scrolling*/
     font-family: 'San Francisco';
 }
@@ -66,10 +71,27 @@
 }
 
 /*css for the page content*/
+
+
 header.pageContent {
     display: none; /*hide the elements of the page until the animation is done*/
-    background-color: #272626;
 }
+
+#entete{
+    background-color: red;
+    height: 10%;
+}
+
+#entete img {
+    max-width: 8%;
+    height: auto;
+    display: block;
+}
+
+#navigation{
+    background-color: rgb(35, 33, 33);
+}
+
 section.pageContent{
     display: none; /*hide the elements of the page until the animation is done*/
     margin : 100px;
