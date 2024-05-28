@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'HACK'; /* Nom de la première police personnalisée */
-    src: url('../hack.regular.ttf') format('truetype'); /* Chemin d'accès vers le fichier .ttf de la première police */
+    font-family: 'San Francisco'; /* Nom de la première police personnalisée */
+    src: url('../SanFranciscoFont_apple.otf') format('truetype'); /* Chemin d'accès vers le fichier .ttf de la première police */
 }
 
 #bodyApple{
     background-color: black;
     margin: 0;
     overflow: hidden; /*to block the page and prevent the page from scrolling*/
-    font-family: 'HACK';
+    font-family: 'San Francisco';
 }
 
 #animation a {
@@ -65,7 +65,22 @@
     }
 }
 
-/*hide the elements of the page until the animation is done*/
-#pageContent{
-    display: none;
+/*css for the page content*/
+header.pageContent {
+    display: none; /*hide the elements of the page until the animation is done*/
+    background-color: #272626;
+}
+section.pageContent{
+    display: none; /*hide the elements of the page until the animation is done*/
+    margin : 100px;
+    
+}
+
+.pageContent h1{
+    font-size: 70px;;
+}
+
+.pageContent p {
+    font-size: 30px;
+    text-align: justify;
 }

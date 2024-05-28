@@ -1,4 +1,4 @@
-const animationDuration = 500;
+const animationDuration = 5000;
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -34,25 +34,20 @@ document.addEventListener('DOMContentLoaded', function() {
         while (container.firstChild) {
             container.removeChild(container.firstChild);
         }
-        // Change background color to white
-        document.body.style.backgroundColor = 'white';
+        // Change background color to black
+        document.body.style.backgroundColor = 'black';
+        document.body.style.color = 'white'
 
         //allow the page to scroll again
         document.body.style.overflow = 'scroll';
         
-
-        //remove all element from body
-        /*
-        while (document.body.firstChild){
-            document.body.removeChild(document.body.firstChild);
-        }*/
         const animationSection = document.getElementById("animation");
         if (animationSection) {
             document.body.removeChild(animationSection);
         }
 
         // Display elements of the page that were hidden
-        var elements = document.querySelectorAll("#pageContent");
+        var elements = document.querySelectorAll(".pageContent");
         for (var i = 0; i < elements.length; i++) {
             elements[i].style.display = 'block';
         }
