@@ -3,16 +3,15 @@
     src: url('../SanFranciscoFont_apple.otf') format('truetype'); /* Chemin d'accès vers le fichier .ttf de la première police */
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-#bodyApple{
+body{
     background-color: black;
+    color: whitesmoke;
     overflow: hidden; /*to block the page and prevent the page from scrolling*/
     font-family: 'San Francisco';
+    margin: 0;
+    padding: 0;
+
 }
 
 #animation a {
@@ -77,19 +76,64 @@ header.pageContent {
     display: none; /*hide the elements of the page until the animation is done*/
 }
 
+footer.pageContent{
+    display: none;
+}
+
+footer{
+    background-color: red;
+    color: #5e17eb;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    
+}
+
+
 #entete{
     background-color: red;
     height: 10%;
 }
 
 #entete img {
-    max-width: 8%;
+    max-width: 6%;
     height: auto;
     display: block;
 }
 
+
 #navigation{
     background-color: rgb(35, 33, 33);
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navigation img{
+    height: 20px;
+
+}
+
+
+/* Styles for navigation links */
+#links {
+    list-style: none;
+    display: flex;
+}
+
+#links li {
+    margin-right: 55px;
+}
+
+
+#links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#links a:hover {
+    color: #adabab;
 }
 
 section.pageContent{
@@ -98,11 +142,11 @@ section.pageContent{
     
 }
 
-.pageContent h1{
+#title{
     font-size: 70px;;
 }
 
-.pageContent p {
+#intro {
     font-size: 30px;
     text-align: justify;
 }
