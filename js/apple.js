@@ -1,4 +1,4 @@
-const animationDuration = 500;
+const animationDuration = 5000;
 
 
 document.addEventListener('DOMContentLoaded', function() {

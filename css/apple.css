@@ -7,11 +7,19 @@
 body{
     background-color: black;
     color: whitesmoke;
-    overflow: hidden; /*to block the page and prevent the page from scrolling*/
     font-family: 'San Francisco';
     margin: 0;
     padding: 0;
 
+}
+
+#bodyApple{
+    overflow: hidden; /*to block the page and prevent the page from scrolling*/
+}
+
+#animation{
+    margin: 0;
+    padding: 0;
 }
 
 #animation a {
@@ -136,10 +144,22 @@ footer{
     color: #adabab;
 }
 
+section{
+    margin : 100px;
+}
+
 section.pageContent{
     display: none; /*hide the elements of the page until the animation is done*/
-    margin : 100px;
-    
+}
+
+section a {
+    text-decoration: none;
+    color : #929494;
+
+}
+
+section p{
+    text-align: justify;
 }
 
 #title{
@@ -149,4 +169,36 @@ section.pageContent{
 #intro {
     font-size: 30px;
     text-align: justify;
+}
+
+#cheetah{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    margin-bottom: 50px;
+}
+
+#cheetah img{
+    margin-top: 35px;
+    max-width: 25%;
+    height: auto;
+}
+#cheetah a{
+    color: white;
+}
+
+#apples{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    margin-bottom: 50px;
+}
+
+#apples img{
+    max-width: 20%;
+    margin-top: 50px;
+    margin-right: 60px;
 }
