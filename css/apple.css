@@ -89,8 +89,8 @@ footer.pageContent{
 }
 
 footer{
-    background-color: red;
-    color: #5e17eb;
+    background-color: rgb(46, 9, 125);
+    color: white;
     margin: 0;
     padding: 15px;
     text-align: center;
@@ -99,7 +99,7 @@ footer{
 
 
 #entete{
-    background-color: red;
+    background-color: rgb(46, 9, 125);
     height: 10%;
 }
 

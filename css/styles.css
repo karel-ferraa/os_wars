@@ -8,7 +8,8 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'HACK';
-    color: #5e17eb;
+    color: rgb(46, 9, 125);
+
 }
 
 h1 {
@@ -29,15 +30,32 @@ header img {
 }
 
 header, footer{
-    background-color: red;
+    background-color: rgb(46, 9, 125);
     margin: 0;
     padding: 15px;
     text-align: center;
 }
 
+footer{
+    color : whitesmoke;
+}
 
-section{
-    background: linear-gradient(to right, #5ce1e6 45%, #5e17eb 100%);
+nav a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav a:hover {
+    color: orangered;
+}
+
+#icons{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+section, main{
+    background: linear-gradient(to right, #e6d2f6 15%, #5e17eb 100%);
     padding: 15px;
     text-align: center;
     margin: 0;
@@ -57,7 +75,32 @@ section{
     padding: 50px;
 }
 
+#us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* Pour aligner les images verticalement */
+    gap: 150px; /* Espace entre les images et le texte */
+    margin-bottom: 50px;
+}
+
+#us img{
+    max-width: 300px;
+
+}
+
+figure {
+    text-align: center;
+}
 
 
+main p{
+    margin-left: 100px;
+    margin-right: 100px;
+}
 
+main a{
+    text-decoration: none;
+    color: rgb(219, 178, 241);
+}
 
