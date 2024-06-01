@@ -5,7 +5,7 @@
 
 
 body{
-    background: linear-gradient(to right, #b1c9e3 15%, #96c2df 100%);
+    background: radial-gradient(circle, #afc7e1, #90c5e8);
     color: rgb(19, 8, 119);
     font-family: 'Segoe';
     margin: 0;
@@ -94,4 +94,47 @@ section{
 #intro {
     font-size: 30px;
     text-align: justify;
+}
+
+section h1{
+    font-size : 60px;
+}
+
+section p{
+    font-size: 25px;
+    text-align: justify;
+}
+
+section a{
+    text-decoration: none;
+    color:rgb(132, 77, 192);
+}
+
+section a:hover{
+    color: blue;
+}
+
+#windows{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    margin-bottom: 50px;
+}
+
+
+#windows figure {
+    margin: 0 30px; /* Adjust margin to manage spacing between figures */
+    text-align: center;
+}
+
+#windows img{
+    max-width: 400px; /* Adjust as needed */
+    margin-top: 50px;
+}
+
+#windows figcaption {
+    margin-top: 5px; /* Space between image and caption */
+    font-size: 14px; /* Adjust font size as needed */
 }
