@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>windows</title>
     <link rel="stylesheet" href="../css/windows.css">
+    <script src="../js/windows_animation.js" defer></script>
 </head>
 <body>
     <header class="pageContent">
-        <div  id="entete">
+        <div id="entete">
             <a href="./home.html">
                 <img src="../img/logo_2.jpg" alt="logo OS wars">
             </a>
@@ -24,7 +25,26 @@
             </ul>
         </nav>
     </header>
-    <section>
+
+    <div id="animation">
+	    <div id="update">
+		    <div id="spinner">
+			    <div class="dot"></div>
+			    <div class="dot"></div>
+			    <div class="dot"></div>
+			    <div class="dot"></div>
+			    <div class="dot"></div>
+			    <div class="dot"></div>
+			    <div class="dot"></div>
+		    </div>
+		    <div id="wait_div"></div>
+	    </div>
+	    <div id="bottom_note">
+		    <p>Your PC will restart several times</p>
+	    </div>
+    </div>
+
+    <section class="pageContent">
         <div id="title">
             <h1>Welcome to Windows !</h1> 
             <h2>The operating system that opened the doors to a new world, or rather... the windows.</h2>
