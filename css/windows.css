@@ -138,3 +138,9 @@ section a:hover{
     margin-top: 5px; /* Space between image and caption */
     font-size: 14px; /* Adjust font size as needed */
 }
+
+ol{
+    list-style-type:lower-roman;
+    font-size: 25px;
+
+}
