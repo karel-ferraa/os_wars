@@ -139,4 +139,8 @@ button {
 button:hover {
 	background-color: #369f72; /* Darker shade on hover */
 }
+
+body{
+    margin:0;
+    padding: 0;
 }
