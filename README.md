@@ -2,7 +2,7 @@ Students: Tiphanie DEPREAUX & Karel BOU FERRAA
 
 This is the repository for the web developpment project.
 
-To see the webpage, you can for instance open a terminal, change directory into the directory of the project, then launch a local web server with
+To see the webpage, you can for instance open a terminal, change directory into the directory of the project, then, assuming you have python installed on your machine, you can launch a local web server with
 ```bash
 python -m http.server
 ```
