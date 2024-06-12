@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GNU-Linux</title>
     <link rel="stylesheet" href="../css/gnu.css">
+    <script src="../js/gnu.js" defer></script>
 </head>
 <body id="bodyGnu">
     <header class="pageContent">
@@ -26,7 +27,133 @@
         </nav>
     </header>
 
-    <section>
+    <section id="form">
+	    <form>
+		    <h2>Pick your graphical display server</h2>
+		    <div class="image-container">
+			    <label>
+				    <input type="radio" name="graphical display server" value="x11">
+				    <img src="../img/gnu_linux_form/x11-logo.png" alt="X11 Window System" width="150" height="150">
+			    </label>
+			    <label>
+				    <input type="radio" name="graphical display server" value="wayland">
+				    <img src="../img/gnu_linux_form/wayland-logo.png" alt="Wayland" width="150" height="150">
+			    </label>
+			    <label>
+				    <input type="radio" name="graphical display server" value="no answer">
+				    <p>How am I supposed to know??</p>
+			    </label>
+		    </div>
+
+		    <h2>Pick your init system</h2>
+		    <div class="image-container">
+			    <label>
+				    <input type="radio" name="init system" value="systemd">
+				    <img src="../img/gnu_linux_form/systemd-logo.png" alt="sytmed" width="330" height="74">
+			    </label>
+			    <label>
+				    <input type="radio" name="init system" value="OpenRC">
+				    <p>OpenRC</p>
+			    </label>
+			    <label>
+				    <input type="radio" name="init system" value="SysVinit">
+				    <p>SysVinit</p>
+			    </label>
+			    <label>
+				    <input type="radio" name="init system" value="runit">
+				    <p>runit</p>
+			    </label>
+			    <label>
+				    <input type="radio" name="init system" value="anopa">
+				    <p>anopa</p>
+			    </label>
+			    <label>
+				    <input type="radio" name="init system" value="no answer">
+				    <p>What the heck is an init system?</p>
+			    </label>
+		    </div>
+
+		    <h2>Pick your text editor</h2>
+		    <div class="image-container">
+			    <label>
+				    <input type="radio" name="text editor" value="vim">
+				    <img src="../img/gnu_linux_form/vim-logo.png" alt="Vim" width="150" height="150">
+			    </label>
+			    <label>
+				    <input type="radio" name="text editor" value="emacs">
+				    <img src="../img/gnu_linux_form/emacs-logo.png" alt="Emacs" width="150" height="150">
+			    </label>
+			    <label>
+				    <input type="radio" name="text editor" value="nano">
+				    <img src="../img/gnu_linux_form/nano-logo.png" alt="Nano" width="150" height="150">
+			    </label>
+			    <label>
+				    <input type="radio" name="text editor" value="no answer">
+				    <p>please, I don't want to get killed by the members of the other clans</p>
+			    </label>
+		    </div>
+
+		    <h2>Pick your desktop environment or window manager</h2>
+		    <div class="image-container">
+			    <label>
+				    <input type="radio" name="de-wm" value="budgie">
+				    <img src="../img/gnu_linux_form/budgie-logo.png" alt="Budgie" width="150" height="150">
+			    </label>
+			    <label>
+				    <input type="radio" name="de-wm" value="cutefish">
+				    <img src="../img/gnu_linux_form/cutefish-logo.png" alt="Cutefish" width="150" height="150">
+			    </label>
+			    <label>
+				    <input type="radio" name="de-wm" value="gnome">
+				    <img src="../img/gnu_linux_form/gnome-logo.png" alt="Gnome" width="150" height="150">
+			    </label>
+			    <label>
+				    <input type="radio" name="de-wm" value="enlightenment">
+				    <img src="../img/gnu_linux_form/enlightenment-logo.png" alt="Enlightenment" width="150" height="150">
+			    </label>
+			    <label>
+				    <input type="radio" name="de-wm" value="cinnamon">
+				    <img src="../img/gnu_linux_form/cinnamon-logo.png" alt="Cinnamon" width="150" height="150">
+			    </label>
+			    <label>
+				    <input type="radio" name="de-wm" value="deepin">
+				    <img src="../img/gnu_linux_form/deepin-logo.png" alt="Deepin" width="150" height="150">
+			    </label>
+			    <label>
+				    <input type="radio" name="de-wm" value="mate">
+				    <img src="../img/gnu_linux_form/mate-logo.png" alt="MATE" width="150" height="150">
+			    </label>
+			    <label>
+				    <input type="radio" name="de-wm" value="xfce">
+				    <img src="../img/gnu_linux_form/xfce-logo.png" alt="Xfce" width="150" height="150">
+			    </label>
+			    <label>
+				    <input type="radio" name="de-wm" value="lxde">
+				    <img src="../img/gnu_linux_form/lxde-logo.png" alt="Lxde" width="150" height="150">
+			    </label>
+			    <label>
+				    <input type="radio" name="de-wm" value="kde-plasma">
+				    <img src="../img/gnu_linux_form/kde-plasma-logo.png" alt="kde-plasma" width="150" height="150">
+			    </label>
+			    <label>
+				    <input type="radio" name="de-wm" value="xmonad">
+				    <img src="../img/gnu_linux_form/xmonad-logo.png" alt="xmonad" width="150" height="150">
+			    </label>
+			    <label>
+				    <input type="radio" name="de-wm" value="dwm">
+				    <img src="../img/gnu_linux_form/dwm-logo.png" alt="dwm" width="150" height="150">
+			    </label>
+			    <label>
+				    <input type="radio" name="de-wm" value="i3">
+				    <img src="../img/gnu_linux_form/i3-logo.png" alt="i3" width="150" height="150">
+			    </label>
+		    </div>
+
+		    <button type="button" onclick="submitForm()">Let me just use my computer please</button>
+	    </form>
+    </section>
+
+    <section class="pageContent">
 	    <h1>Curious about the gnu and the penguin?</h1>
 
 	    <div>

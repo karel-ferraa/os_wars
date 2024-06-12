@@ -88,3 +88,51 @@ footer{
     padding: 15px;
     text-align: center;
 }
+
+.pageContent {
+	display: none;
+}
+
+/* styling for the form */
+.image-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.image-container label {
+	cursor: pointer;
+}
+.image-container input[type="radio"] {
+	display: none;
+}
+.image-container input[type="radio"] + img {
+	border: 2px solid transparent;
+	transition: border 0.3s ease;
+}
+.image-container input[type="radio"] + p {
+	border: 2px solid transparent;
+	transition: border 0.3s ease;
+}
+.image-container input[type="radio"]:checked + img {
+	border: 2px solid #42b983; /* Highlight color */
+}
+.image-container input[type="radio"]:checked + p {
+	border: 2px solid #42b983; /* Highlight color */
+}
+
+button {
+	display: block;
+	margin: 20px auto; /* Center the button and add top and bottom margin */
+	padding: 15px 30px; /* Increase padding for a bigger button */
+	font-size: 16px; /* Increase font size */
+	background-color: #42b983; /* Button background color */
+	color: #fff; /* Button text color */
+	border: none;
+	border-radius: 5px; /* Rounded corners */
+	cursor: pointer;
+	transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+button:hover {
+	background-color: #369f72; /* Darker shade on hover */
+}
+}
